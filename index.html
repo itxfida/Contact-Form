@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>Contact Form</h2>
+  <form id="contactForm" onsubmit="submitForm(event)">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <div>
+      <input type="submit" value="Submit" >
+    </div>
+  </form>
+
+  <div id="formMessage"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
